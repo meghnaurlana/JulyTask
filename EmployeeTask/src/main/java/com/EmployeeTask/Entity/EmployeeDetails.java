@@ -8,7 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "employee_details")
@@ -27,7 +27,7 @@ public class EmployeeDetails {
     @Column(name = "phone_number")
     private String phoneNumber;
     @Column(name = "doj")
-    private Date doj;
+    private LocalDate doj;
     @Column(name = "salary")
     private double salary;
 }
